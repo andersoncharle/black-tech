@@ -21,7 +21,7 @@ instead use v-else
     <span v-else>show books</span>
   </button>
 <!--v show-->
-  <div v-show="showBooks">currently show books</div>
+  <div v-show="showBooks" class="text-white w-1/2 mx-auto p-3 bg-purple-500">currently show books</div>
 </template>
 
 <script>
