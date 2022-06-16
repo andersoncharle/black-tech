@@ -67,7 +67,7 @@ export default {
       alert("handle Double Click Event")
     },
     handleMousemoveEvent(e){
-
+      this.x = e.offsetX
       console.log(e)
     }
   }
