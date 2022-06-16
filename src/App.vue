@@ -30,7 +30,9 @@ instead use v-else
   <div class="box" @mousemove="handleMousemoveEvent">mouse move events: {{ x }} : {{ y }}</div>
 
 <!--v-for-->
-
+  <ul v-for="book,book_id in books">
+    <li> {{ book}}</li>
+  </ul>
 </template>
 
 <script>
