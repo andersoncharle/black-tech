@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+    .box{
+        @apply py-[100px] px-0 text-center bg-white inline-block w-[400px] m-[20px];
+    }
+}
