@@ -33,7 +33,8 @@ instead use v-else
   <div v-if="showBooks">hide books
       <ul class="text-white text-justify">
     <li v-for="book in books" :key="book" class="p-3 divide-y-2 divide-amber-700">
-    <h1>{{book.title}}</h1>
+      <img :src="book.img" :alt="book.title">
+      <h1>{{book.title}}</h1>
       <p>{{book.author}}</p>
       <p>{{book.age}}</p>
     </li>
