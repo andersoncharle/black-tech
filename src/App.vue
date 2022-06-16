@@ -13,7 +13,12 @@
 
   <button class="bg-red-700 py-3 px-6 rounded-lg block" @click="changeTitle('this is new title anderson')">change title</button>
 
-  <button @click="toggleShowBooks" class="bg-blue-500 py-3 px-6 rounded-lg block">change the books title</button>
+  <button @click="toggleShowBooks" class="bg-blue-500 py-3 px-6 rounded-lg flex">
+    <span v-if="showBooks">hide books</span>
+    <span v-if="!showBooks">show books</span>
+
+  </button>
+
 </template>
 
 <script>
