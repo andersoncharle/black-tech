@@ -45,6 +45,9 @@ export default {
         author: "anderson",
         age: 45
       },
+      books: [
+        {title: "name of wind",author:"mkakari",age:20},
+      ],
       x: 0,
       y:0
     }
