@@ -33,6 +33,9 @@ export default {
   methods:{
     changeTitle(title){
       this.book.title= title
+    },
+    toggleShowBooks(){
+      this.showBooks = false
     }
   }
 
