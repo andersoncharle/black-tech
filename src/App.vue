@@ -27,7 +27,7 @@ instead use v-else
   <div class="box" @mouseover="handleEvent">mouseover event</div>
   <div class="box" v-on:mouseleave="handleLeaveEvent">mouseleave event</div>
   <div class="box" v-on:dblclick="handleDoubleClickEvent">double click event</div>
-  <div class="box"></div>
+  <div class="box" @mousemove="handleMousemoveEvent">mouse move events: {{ x }} : {{ y }}</div>
 
 
 </template>
