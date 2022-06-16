@@ -20,7 +20,8 @@ instead use v-else
 -->
     <span v-else>show books</span>
   </button>
-
+<!--v show-->
+  <div v-show="showBooks">currently show books</div>
 </template>
 
 <script>
