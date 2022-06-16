@@ -3,7 +3,7 @@
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <h1>title of the book: {{ book.title}}</h1>
 <!--attribtue binding-->
-  <a :href="url" class="">this is link</a>
+  <a :href="url" class="text-white">this is link</a>
   <div v-if="showBooks">
     <p class="bg-amber-800">{{book.author}} - {{book.age}}</p>
   </div>
