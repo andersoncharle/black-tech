@@ -14,10 +14,10 @@
   <button class="bg-red-700 py-3 px-6 rounded-lg block" @click="changeTitle('this is new title anderson')">change title</button>
 
   <button @click="toggleShowBooks" class="bg-blue-500 py-3 px-6 rounded-lg flex">
-    <span v-if="showBooks">hide books</span>
 <!--    <span v-if="!showBooks">show books</span>
 instead use v-else
 -->
+    <span v-if="showBooks">hide books</span>
     <span v-else>show books</span>
   </button>
 <!--v show-->
@@ -29,14 +29,15 @@ instead use v-else
   <div class="box" v-on:dblclick="handleDoubleClickEvent">double click event</div>
   <div class="box" @mousemove="handleMousemoveEvent">mouse move events: {{ x }} : {{ y }}</div>
 
-<!--v-for-->
-  <ul class="text-white text-justify">
+  <div v-if="showBooks">hide books
+      <ul class="text-white text-justify">
     <li v-for="book in books" :key="book" class="p-3 divide-y-2 divide-amber-700">
     <h1>{{book.title}}</h1>
       <p>{{book.author}}</p>
       <p>{{book.age}}</p>
     </li>
   </ul>
+    </div>
 </template>
 
 <script>
