@@ -56,9 +56,12 @@ export default {
     toggleShowBooks(){
       this.showBooks = !this.showBooks
     },
-    handleEvent(e){
+    handleEvent(e,data){
       console.log("mouse over events")
-      console.log(e)
+      console.log(e,e.type)
+     if (data){
+       console.log(data)
+     }
     },
     handleLeaveEvent(){
       alert("mouse leave event")
