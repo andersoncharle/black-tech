@@ -56,10 +56,10 @@ export default {
         age: 45
       },
       books: [
-        {title: "name of wind",author:"mkakari",age:20},
-        {title: "land of the wind",author:"rose",age:34},
-        {title: "merlin",author:"asha",age:19},
-        {title: "tailwind css",author:"john",age:25},
+        {title: "name of wind",author:"mkakari",age:20,img: "assets/logo.png"},
+        {title: "land of the wind",author:"rose",age:34,img: "assets/logo.png"},
+        {title: "merlin",author:"asha",age:19,img: "assets/logo.png"},
+        {title: "tailwind css",author:"john",age:25,img: "assets/logo.png"},
       ],
       x: 0,
       y:0
