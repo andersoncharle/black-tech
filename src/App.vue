@@ -25,7 +25,7 @@ instead use v-else
 
 <!-- mouse events -->
   <div class="box" @mouseover="handleEvent">mouseover event</div>
-  <div class="box" v-on:mouseleave="handleEvent">mouseleave</div>
+  <div class="box" v-on:mouseleave="handleEvent">mouseleave event</div>
   <div class="box"></div>
   <div class="box"></div>
 
