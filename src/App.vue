@@ -59,6 +59,9 @@ export default {
     },
     handleLeaveEvent(){
       alert("mouse leave event")
+    },
+    handleDoubleClickEvent(){
+      alert("handle Double Click Event")
     }
   }
 
