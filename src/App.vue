@@ -2,7 +2,8 @@
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <h1>title of the book: {{ book.title}}</h1>
-
+<!--attribtue binding-->
+  <a :href="url" class="">this is link</a>
   <div v-if="showBooks">
     <p class="bg-amber-800">{{book.author}} - {{book.age}}</p>
   </div>
@@ -47,6 +48,7 @@ export default {
   name: 'App',
   data(){
     return{
+      url: "https://www.youtube.com/",
       showBooks:true,
       book : {
         title : "code with vue",
