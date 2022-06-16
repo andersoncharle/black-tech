@@ -44,7 +44,9 @@ export default {
         title : "code with vue",
         author: "anderson",
         age: 45
-      }
+      },
+      x: 0,
+      y:0
     }
   },
   methods:{
@@ -55,13 +57,18 @@ export default {
       this.showBooks = !this.showBooks
     },
     handleEvent(e){
-      console.log("mouse over events" + e)
+      console.log("mouse over events")
+      console.log(e)
     },
     handleLeaveEvent(){
       alert("mouse leave event")
     },
     handleDoubleClickEvent(){
       alert("handle Double Click Event")
+    },
+    handleMousemoveEvent(e){
+
+      console.log(e)
     }
   }
 
