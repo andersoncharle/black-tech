@@ -24,7 +24,7 @@ instead use v-else
   <div v-show="showBooks" class="text-white w-1/2 mx-auto p-3 bg-purple-500">currently show books</div>
 
 <!-- mouse events -->
-  <div class="box" @mouseover="handleEvent">mouseover event</div>
+  <div class="box" @mouseover="handleEvent($event,5)">mouseover event</div>
   <div class="box" v-on:mouseleave="handleLeaveEvent">mouseleave event</div>
   <div class="box" v-on:dblclick="handleDoubleClickEvent">double click event</div>
   <div class="box" @mousemove="handleMousemoveEvent">mouse move events: {{ x }} : {{ y }}</div>
