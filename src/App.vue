@@ -53,6 +53,9 @@ export default {
     },
     toggleShowBooks(){
       this.showBooks = !this.showBooks
+    },
+    handleEvent(){
+      alert("mouse over events")
     }
   }
 
