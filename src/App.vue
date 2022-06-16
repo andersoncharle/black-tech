@@ -24,7 +24,7 @@ instead use v-else
   <div v-show="showBooks" class="text-white w-1/2 mx-auto p-3 bg-purple-500">currently show books</div>
 
 <!-- mouse events -->
-  <div class="py-[100px] px-0 w- text-center bg-white m- inline-block w-[400px] m-[20px]">
+  <div class="box">
 
   </div>
 
