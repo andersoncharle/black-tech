@@ -15,7 +15,9 @@
 
   <button @click="toggleShowBooks" class="bg-blue-500 py-3 px-6 rounded-lg flex">
     <span v-if="showBooks">hide books</span>
-<!--    <span v-if="!showBooks">show books</span>-->
+<!--    <span v-if="!showBooks">show books</span>
+instead use v-else
+-->
     <span v-else>show books</span>
   </button>
 
