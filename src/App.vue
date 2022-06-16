@@ -26,7 +26,7 @@ instead use v-else
 <!-- mouse events -->
   <div class="box" @mouseover="handleEvent">mouseover event</div>
   <div class="box" v-on:mouseleave="handleLeaveEvent">mouseleave event</div>
-  <div class="box">double click event</div>
+  <div class="box" v-on:dblclick="handleDoubleClickEvent">double click event</div>
   <div class="box"></div>
 
 
