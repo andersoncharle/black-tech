@@ -55,7 +55,7 @@ export default {
       this.showBooks = !this.showBooks
     },
     handleEvent(e){
-      alert("mouse over events" + e)
+      console.log("mouse over events" + e)
     },
     handleLeaveEvent(){
       alert("mouse leave event")
