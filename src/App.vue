@@ -36,7 +36,7 @@ export default {
       this.book.title= title
     },
     toggleShowBooks(){
-      this.showBooks = false
+      this.showBooks = !this.showBooks
     }
   }
 
