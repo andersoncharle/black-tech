@@ -1,4 +1,4 @@
-# vue-demo
+# black-tech
 
 ## Project setup
 ```

@@ -1,16 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <img alt="Vue logo" src="./assets/logo.png">-->
+<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <h1>title of the book: {{ book.title}}</h1>
+
+  <div v-if="showBooks">
+    <p class="bg-amber-800">{{book.author}} - {{book.age}}</p>
+  </div>
+
+  <button v-on:click="book.age++">increment age</button>
+  <button v-on:click="book.age--">decrement age</button>
+  <button @click="book.author ='mkakariaanerson'">change author</button>
+
+  <button @click="changeTitle('this is new title anderson')">change title</button>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      showBooks:true,
+      book : {
+        title : "code with vue",
+        author: "anderson",
+        age: 45
+      }
+    }
+  },
+  methods:{
+    changeTitle(title){
+      this.book.title= title
+    }
   }
+
 }
 </script>
 
