@@ -11,8 +11,9 @@
   <button v-on:click="book.age--">decrement age</button>
   <button @click="book.author ='mkakariaanerson'">change author</button>
 
-  <button @click="changeTitle('this is new title anderson')">change title</button>
+  <button class="bg-red-700 py-3 px-6 rounded-lg" @click="changeTitle('this is new title anderson')">change title</button>
 
+  <button @click="toggleShowBooks">change the books title</button>
 </template>
 
 <script>
