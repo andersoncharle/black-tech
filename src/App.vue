@@ -30,8 +30,8 @@ instead use v-else
   <div class="box" @mousemove="handleMousemoveEvent">mouse move events: {{ x }} : {{ y }}</div>
 
 <!--v-for-->
-  <ul>
-    <li v-for="book in books" :key="book">
+  <ul class="text-white text-justify">
+    <li v-for="book in books" :key="book" class="p-3 divide-y-2 divide-amber-700">
     <h1>{{book.title}}</h1>
       <p>{{book.author}}</p>
       <p>{{book.age}}</p>
