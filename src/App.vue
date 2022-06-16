@@ -68,6 +68,7 @@ export default {
     },
     handleMousemoveEvent(e){
       this.x = e.offsetX
+      this.y = e.offsetY
       console.log(e)
     }
   }
