@@ -47,6 +47,9 @@ export default {
       },
       books: [
         {title: "name of wind",author:"mkakari",age:20},
+        {title: "land of the wind",author:"rose",age:34},
+        {title: "merlin",author:"asha",age:19},
+        {title: "tailwind css",author:"john",age:25},
       ],
       x: 0,
       y:0
